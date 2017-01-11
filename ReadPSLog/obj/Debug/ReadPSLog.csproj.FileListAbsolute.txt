@@ -1,0 +1,11 @@
+C:\Users\pmartin\Documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\ReadPSLog.exe.config
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\ReadPSLog.exe
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\ReadPSLog.pdb
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\OSIsoft.AFSDK.dll
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\System.Management.Automation.dll
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\OSIsoft.AFSDK.xml
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\obj\Debug\ReadPSLog.csprojResolveAssemblyReference.cache
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\obj\Debug\ReadPSLog.exe
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\obj\Debug\ReadPSLog.pdb
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\PowershellLogWrapper.dll
+C:\Users\pmartin\documents\visual studio 2015\Projects\Powershell_Logging\ReadPSLog\bin\Debug\PowershellLogWrapper.pdb
