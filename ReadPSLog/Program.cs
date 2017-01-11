@@ -11,8 +11,10 @@ namespace ReadPSLog
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine(PSLog.GetLogs(startTime: "*-10m", endTime: "*", severity: Severity.Informational, count: 10, remoteHost: "pmartin-ps1.dev.osisoft.int", id: new int[] {7079, 7039}));
-            Console.ReadLine();
+			Console.WriteLine(PSLog.GetLogs(startTime: "*-10m", endTime: "*", severity: Severity.Informational, count: 10, remoteHost: "server.something.com", id: new int[] {7079, 7039}));
+
+			List<PIMessage> messages = PSLog.GetLogsAsList(startTime: "*-10m", endTime: "*", severity: Severity.Informational, count: 10, remoteHost: "server.something.com", id: new int[] { 7079, 7039 }).ToList();
+			Console.ReadLine();
 		}
 	}
 }

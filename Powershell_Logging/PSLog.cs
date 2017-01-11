@@ -19,7 +19,21 @@ namespace PowershellLogWrapper
 
     public static class PSLog
     {
-
+		/// <summary>
+		/// Get PI SDK logs and output results as string
+		/// </summary>
+		/// <param name="startTime"></param>
+		/// <param name="endTime"></param>
+		/// <param name="remoteHost">Name of remote server to gather logs from</param>
+		/// <param name="severity"></param>
+		/// <param name="count">How many messages can be returned</param>
+		/// <param name="message">Messages must contain this text, wildcard characters supports</param>
+		/// <param name="program">Messages must come from a partticular program</param>
+		/// <param name="id">Message ids</param>
+		/// <param name="category"></param>
+		/// <param name="originatingHost"></param>
+		/// <param name="originatingOSUser"></param>
+		/// <returns>string</returns>
 		public static string GetLogs(	string startTime = "*-10m", string endTime= "*", string remoteHost = "", Severity severity = Severity.Error, int count = int.MaxValue, string message = "*", 
 										string program = "*", int[] id = null, string category = "*", string originatingHost = "*", string originatingOSUser = "*") {
 			string st = new AFTime(startTime).LocalTime.ToString();
@@ -60,6 +74,21 @@ namespace PowershellLogWrapper
 			return sb.ToString();
 		}
 
+		/// <summary>
+		/// Get PI SDK logs and output results as a PIMessage IEnumerable
+		/// </summary>
+		/// <param name="startTime"></param>
+		/// <param name="endTime"></param>
+		/// <param name="remoteHost">Name of remote server to gather logs from</param>
+		/// <param name="severity"></param>
+		/// <param name="count">How many messages can be returned</param>
+		/// <param name="message">Messages must contain this text, wildcard characters supports</param>
+		/// <param name="program">Messages must come from a partticular program</param>
+		/// <param name="id">Message ids</param>
+		/// <param name="category"></param>
+		/// <param name="originatingHost"></param>
+		/// <param name="originatingOSUser"></param>
+		/// <returns></returns>
 		public static IEnumerable<PIMessage> GetLogsAsList(string startTime = "*-10m", string endTime = "*", string remoteHost = "", Severity severity = Severity.Error, int count = int.MaxValue, string message = "*",
 										string program = "*", int[] id = null, string category = "*", string originatingHost = "*", string originatingOSUser = "*")
 		{
